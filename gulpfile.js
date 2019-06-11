@@ -49,22 +49,9 @@ function clean() {
 
 // Bring third party dependencies from node_modules into vendor directory
 function modules() {
-  // Bootstrap JS
-  var bootstrapJS = gulp.src('./node_modules/bootstrap/dist/js/*')
-    .pipe(gulp.dest('./vendor/bootstrap/js'));
-  // Bootstrap SCSS
-  var bootstrapSCSS = gulp.src('./node_modules/bootstrap/scss/**/*')
-    .pipe(gulp.dest('./vendor/bootstrap/scss'));
-  // ChartJS
-  var chartJS = gulp.src('./node_modules/chart.js/dist/*.js')
-    .pipe(gulp.dest('./vendor/chart.js'));
-  // dataTables
-  var dataTables = gulp.src([
-      './node_modules/datatables.net/js/*.js',
-      './node_modules/datatables.net-bs4/js/*.js',
-      './node_modules/datatables.net-bs4/css/*.css'
-    ])
-    .pipe(gulp.dest('./vendor/datatables'));
+  // Bootstrap
+  var bootstrap = gulp.src('./node_modules/bootstrap/dist/**/*')
+    .pipe(gulp.dest('./vendor/bootstrap'));
   // Font Awesome
   var fontAwesome = gulp.src('./node_modules/@fortawesome/**/*')
     .pipe(gulp.dest('./vendor'));
@@ -77,7 +64,12 @@ function modules() {
       '!./node_modules/jquery/dist/core.js'
     ])
     .pipe(gulp.dest('./vendor/jquery'));
-  return merge(bootstrapJS, bootstrapSCSS, chartJS, dataTables, fontAwesome, jquery, jqueryEasing);
+  // Simple Line Icons
+  var simpleLineIconsFonts = gulp.src('./node_modules/simple-line-icons/fonts/**')
+    .pipe(gulp.dest('./vendor/simple-line-icons/fonts'));
+  var simpleLineIconsCSS = gulp.src('./node_modules/simple-line-icons/css/**')
+    .pipe(gulp.dest('./vendor/simple-line-icons/css'));
+  return merge(bootstrap, fontAwesome, jquery, jqueryEasing, simpleLineIconsFonts, simpleLineIconsCSS);
 }
 
 // CSS task
@@ -111,7 +103,7 @@ function js() {
   return gulp
     .src([
       './js/*.js',
-      '!./js/*.min.js',
+      '!./js/*.min.js'
     ])
     .pipe(uglify())
     .pipe(header(banner, {
@@ -127,7 +119,7 @@ function js() {
 // Watch files
 function watchFiles() {
   gulp.watch("./scss/**/*", css);
-  gulp.watch(["./js/**/*", "!./js/**/*.min.js"], js);
+  gulp.watch("./js/**/*", js);
   gulp.watch("./**/*.html", browserSyncReload);
 }
 
