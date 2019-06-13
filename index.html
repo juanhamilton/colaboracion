@@ -83,15 +83,15 @@
               
                 </li>
                 <li class="sidebar-nav-item">
-                    <a class="js-scroll-trigger" href="#contact2">Permutaciones</a>
+                    <a class="js-scroll-trigger" href="#permutaciones">Permutaciones</a>
                
                 </li>
                 <li class="sidebar-nav-item">
-                    <a class="js-scroll-trigger" href="#contact3">Variaciones</a>
+                    <a class="js-scroll-trigger" href="#variaciones">Variaciones</a>
                
                 </li>
                 <li class="sidebar-nav-item">
-                    <a class="js-scroll-trigger" href="#contact4">Combinaciones</a>
+                    <a class="js-scroll-trigger" href="#combinaciones">Combinaciones</a>
             
                 </li>
             </ul>
@@ -378,7 +378,8 @@
                 </div>
             </div>
         </section>
- <!-- Portfolio -->
+        
+ <!-- Principio Multiplicativo -->
         <section class="content-section" id="principioMultiplicativo">
             <div class="container">
                 <!--                <div class="content-section-heading text-center">
@@ -632,18 +633,280 @@
 <section id="feedback-quesFeedback0b30" class="feedback js-feedback js-hidden">
 <h1 class="js-sr-av">Retroalimentación</h1>
 <p>Los tres medios alternativos de transporte son disjuntos, no puedo elegir 2 de ellos para realizar el viaje, por lo que al optar por una de ellas, las otras dos quedan excluidas; por lo tanto es aplicable el principio aditivo. El número de maneras diferentes en que podemos viajar de Santiago a Concepción es 3 + 4 + 2 = 9 formas distintas para viajar a nuestro destino.</p>
-<p><img src="viaje.png" alt="viaje" width="347" height="399" /></p></section>
+<p><img src="img/viaje.png" alt="viaje" width="347" height="399" /></p></section>
 </form>
 </div>
 </div>
 </div>
 </article>
 <div id="packageLicense" class="cc cc-by-sa">
-<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+
+</div>
+</section>
+
+                    
+       <!-- Permutaciones -->
+        <section class="content-section" id="permutaciones">
+            <div class="container">
+               
+                <div class="row">
+                    <div class="col-12">
+                       <header id="nodeDecoration"><h1 id="nodeTitle">Permutaciones</h1></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id39">
+<div class="iDevice emphasis0">
+<div id="ta39_85" class="block iDevice_content">
+<p><a title="Borrar" href="http://localhost:51235/conocimientos_previos/authoring?state=20#" onclick="confirmThenSubmitLink('Esto\ borrar\á\ este\ iDevice\.\ \¿Confirma\ que\ desea\ hacerlo\?', 'delete', '37', 1);">Un video que muestra una problematica asociada a permutaciones</a></p>
+<p></p>
+<div align="center">
+<p><iframe width="640" height="480" src="//www.youtube.com/embed/65ps-h-yc8Y" allowfullscreen="allowfullscreen"></iframe></p>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper FreeTextIdevice" id="id37">
+<div class="iDevice emphasis0">
+<div id="ta37_85" class="block iDevice_content">
+<p>Se llaman permutaciones de n objetos a las diferentes maneras en que sepueden ordenar esos n objetos; todas las permutaciones constan de losmismos n elementos, pero se consideran diferentes, por el orden en que se colocan éstos. Podemos encontrar distintos tipos de permutaciones:</p>
+<p><em><strong>Permutaciones SIN repetición:</strong> </em></p>
+<p>Las <strong>permutaciones sin repetición de <em>n </em>elementos</strong> se definen como las distintas formas de ordenar todos esos <u>elementos distintos</u>, por lo que la única diferencia entre ellas es el orden de colocación de sus elementos.</p>
+<p>El número de estas permutaciones es : P<sub>n</sub> = n!</p>
+<p><strong><em>Ejemplo</em></strong>: De cuántas maneras distintas se pueden ordenar 5 amigos para tomar una foto, de modo que estos queden en linea.</p>
+<p>En este ejemplo siempre nos importara el orden en que queden, ya que uno a la derecha o a la izquierda de otro será un orden distinto. En conclusión el número de ordenes distintos para que estos amigos se tomen la foto será P<sub>5</sub> =5! = 120. Lo que indica que hay 120 posibilidades distintas de fotos para este grupo.</p>
+<p><strong>Permutaciones CON repetición:</strong></p>
+<p>Llamamos a las <strong>permutaciones con repetición de <em>n </em>elementos tomados de <em>a</em> en <em>a</em>, de <em>b</em> en <em>b</em>, de <em>c</em> en <em>c</em>, etc,</strong> cuando en los <em>n</em> elementos existen elementos repetidos (un elemento aparece <em>a</em> veces, otro <em>b</em> veces, otro <em>c</em> veces, etc) verificándose que <strong><em>a+b+c+...=n.</em></strong></p>
+<p>El número de estas permutaciones es:</p>
+<p><img src="img/Permutaciones_con_repeticion.png" alt="formula permutaciones con repeticion" width="157" height="79" /></p>
+<p><em><strong>Ejemplo</strong></em>:  ¿Cuántos números de 6 cifras se pueden formar si en ellos siempre hay 1 uno, 2 dos y 3 tres?</p>
+<p>En este ejemplo nos piden que formemos números donde hay algunos que se repiten, algunos de los posibles números podrían ser: 122333, 212333, 332123, etc.</p>
+<p>Como vemos hay elementos que se repiten por ende estamos frente a una permutación con repetición por lo que la cantidad de palabras distintas estará dado por:</p>
+<p><img src="img/ejpermutacionconrep.png" alt="ejemplorep" width="195" height="52" /></p>
+<p><strong>Permutaciones Circulares:</strong></p>
+<p>Hasta ahora hemos visto permutaciones lineales, en ellas, los elementos se disponen en una fila que tiene principio y fin.</p>
+<p>Una situación diferente es la que se nos presenta al permutar, por ejemplo, objetos que se ordenan en forma circular.</p>
+<p>Se llaman permutaciones circulares de n objetos a las diferentes maneras en que se pueden colocar esos n objetos alrededor de un círculo; en este tipo de permutaciones, lo que importa son las posiciones relativas de los objetos con respecto a ellos mismos y no las posiciones absolutas de los objetos en el círculo.</p>
+<p>El número total de permutaciones circulares de n elementos distintos es: P<sub>n(circulares)</sub> = (n - 1)!</p>
+<p><em><strong>Ejemplo</strong></em>: De cuántas maneras distintas se pueden sentar en una mesa redonda 7 personas.</p>
+<p>Como nos dicen que deben sentarse en una mesa redonda la respuesta viene dada por una permutación circular, en este caso será P<sub>7(circular)</sub> = (7 - 1)! = 6! = 720 posibilidades distintas de sentarse en dicha mesa.</p>
+<p></p>
+<p></p>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+
 </div>
 </section>
     
-    
+          <!-- Variaciones -->
+        <section class="content-section" id="variaciones">
+            <div class="container">
+               
+                <div class="row">
+                    <div class="col-12">
+                        <header id="nodeDecoration"><h1 id="nodeTitle">variaciones</h1></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id44">
+<div class="iDevice emphasis0">
+<div id="ta44_85" class="block iDevice_content">
+<h1 style="text-align: center;"><strong>Situación inicial</strong></h1>
+<p style="text-align: center;"><iframe width="640" height="480" src="//www.youtube.com/embed/E7weGmkix5c" allowfullscreen="allowfullscreen"></iframe></p>
+<h1><strong><br /></strong><strong></strong></h1>
+<p><strong></strong></p>
+<p></p>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper FreeTextIdevice" id="id46">
+<div class="iDevice emphasis0">
+<div id="ta46_85" class="block iDevice_content">
+<p>Las <strong>variaciones sin repetición de <em>n </em>elementos tomados de <em>p</em> en <em>p</em></strong> se definen como las distintas agrupaciones formadas con <strong><em>p</em> </strong><u>elementos distintos</u>, eligiéndolos de entre los <strong><em>n</em></strong> elementos de que disponemos, considerando una variación distinta a otra tanto <u>si difieren en algún elemento</u> como si están situados en <u>distinto orden</u>.</p>
+<p>El número de variaciones que se pueden construir se puede calcular mediante la fórmula:</p>
+<p><img src="Formulavariacionessinrep.png" alt="formula" style="display: block; margin-left: auto; margin-right: auto;" width="164" height="86" /></p>
+<p>Las <strong>variaciones con repetición de <em>n </em>elementos tomados de <em>p</em> en <em>p</em></strong> se definen como las distintas agrupaciones formadas con <strong><em>p</em> </strong><u>elementos que pueden repetirse</u>, eligiéndolos de entre los <strong><em>n</em></strong> elementos de que disponemos, considerando una variación distinta a otra tanto <u>si difieren en algún elemento</u> como si están situados en <u>distinto orden</u>.</p>
+<p>El número de variaciones que se pueden construir se puede calcular mediante la fórmula: <br /><img src="Varconrepformula.png" alt="formula var con rep" style="display: block; margin-left: auto; margin-right: auto;" width="112" height="42" /></p>
+<p><strong>Ejemplos</strong></p>
+<ol>
+<li><strong> </strong><strong>¿</strong>Cuántos números de tres cifras distintas se pueden formar con los dígitos 1,2,3,….,9?</li>
+</ol>
+<p><strong>     </strong>Como podemos ver en este caso nos preguntas por cifras de 3 dígitos que no se pueden repetir por lo que estamos frente a una variación sin repetición por lo que se calcularía como sigue:</p>
+<p>             <img src="img/Varejemplo1.png" alt="variacion ejemplo1" width="196" height="53" /></p>
+<p>Por lo que podemos concluir que se pueden formar 504 números de 3 cifras distintas utilizando los dígitos del 1 al 9.</p>
+<p></p>
+<p>2. Con las letras del alfabeto español (25 letras)  ¿Cuántas palabras (con o sin sentido) de 6 letras distintas pueden formarse? </p>
+<p>En este ejemplo lo que se pide es que calculemos la cantidad de palabras de 6 letras que podemos formar con las letras del alfabeto (25 letras), teniendo la posibilidad de reptir las letras ya que en ninguna parte nos dicen que no sea así, por lo que el calculo sería de la siguiente manera:</p>
+<p><img src="img/Varconrepejemplo2.png" alt="ejemplo2variacion" width="174" height="38" /></p>
+<p>Lo que nos indica que podemos formar 244.140.625 palabras distintas  de 6 letras con las letras del abecedario.</p>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper CasestudyIdevice em_iDevice" id="id47">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Sala de clases</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta47_94" class="block iDevice_content">
+<p> ¿De cuántas maneras diferentes se pueden sentar los 22 alumnos del grupo de matemáticas de III medio de tu establecimiento en una sala que dispone de 35 asientos?<br /><br /></p>
+</section>
+<section id="taquesQuestion0b47" class="block iDevice_content">
+<p><img src="img/sala_de_clases.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto;" width="297" height="183" /></p>
+</section>
+<form name="feedback-form-quesFeedback0b47" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback0b47text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback0b47" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<section id="feedback-quesFeedback0b47" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p>El primer alumno que entra al salón puede escoger su lugar de entre 35 posibles, el segundo puede escoger lugar de entre 34 posibles,... y así, sucesivamente, hasta el alumno número 22, que puede escoger lugar de entre 14 posibles. Evidentemente, 13 de los 35 lugares quedarán vacíos; se trata de calcular las variaciones de 35 objetos de orden 22, se calcula de la siguiente manera:</p>
+<p><img src="img/ejerpractico1var.png" alt="ejercicio1" width="429" height="56" /></p>
+<p>No podemos dar cuenta que es un número bastante grande.</p></section>
+</form>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper CasestudyIdevice em_iDevice" id="id48">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Maratón de Santiago</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta48_94" class="block iDevice_content">
+<p>es una  fiesta deportiva se realizá cada año en Santiago,  maratonistas que recorrerán 8 comunas de la capital hasta llegar a la meta, mientras que en medio maratón se inscribieron 14.817 personas y 11.837 en 10K. </p>
+</section>
+<section id="taquesQuestion0b48" class="block iDevice_content">
+<p>Supongamos que en una maratón escolar en la que corren 2000 personas, necesitamos saber de cuántas maneras distintas podemos entregar los premios a los 3 primeros lugares, teniendo distintos premios para las diferentes posiciones.</p>
+<p></p>
+<p><img src="img/maraton.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto;" width="338" height="190" /></p>
+<p>¿Cuántas posibles formas podrían llegar los competidores en las 3 primeras posiciones?</p>
+</section>
+<form name="feedback-form-quesFeedback0b48" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback0b48text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback0b48" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<section id="feedback-quesFeedback0b48" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p>Nos podemos dar cuenta que esta situación es una variación sin repetición ya que los 3 primeros puestos no se pueden repetir, con lo cuál tendremos las siguientes posibilidades:</p>
+<p><img src="img/maratonresultado.png" alt="ejercicio maraton respuesta" width="348" height="48" /></p>
+<p>Podemos ver que existen muchas posibilidades distintas de como repartir las medallas de los 3 primeros puestas en dicha carrera.</p></section>
+</form>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper CasestudyIdevice em_iDevice" id="id49">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Caso práctico</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta49_94" class="block iDevice_content">
+<p>¿Cuántos son los resultados posibles de dos equipos de futbol que se enfrentan en 5 partidos?</p>
+</section>
+<section id="taquesQuestion0b49" class="block iDevice_content">
+<p><img src="img/partido.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto;" width="388" height="215" /></p>
+</section>
+<form name="feedback-form-quesFeedback0b49" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback0b49text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback0b49" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<section id="feedback-quesFeedback0b49" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p>Los resultados posibles son Ganar, empatar o perder. Es decir, tenemos 3 elementos con los que hay que hacer las diferentes agrupaciones. El orden importa, ya que, por ejemplo, el resultado Gana, gana, gana, empata, empata, pierde,  es diferente que gana, gana, gana, empata, gana . Eso quiere decir que no son permutaciones. Por otro lado, no intervienen todos los elementos del conjunto. Entonces tenemos variaciones. Como<br />se pueden repetir los elementos, tenemos variaciones con repetición, lo que nos da como resultado:</p>
+<p><img src="img/Varconrep35.png" alt="ejercicio3" width="140" height="44" /></p>
+<p>Lo que nos indica que existen 243 posibles resultados de los 5 partidos.</p>
+<p></p></section>
+</form>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+
+</div>
+                  
+</section>
+
+               <!-- Combinaciones -->
+        <section class="content-section" id="combinaciones">
+            <div class="container">
+               
+                <div class="row">
+                    <div class="col-12">
+                        <header id="nodeDecoration"><h1 id="nodeTitle">Combinaciones</h1></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id45">
+<div class="iDevice emphasis0">
+<div id="ta45_85" class="block iDevice_content">
+<h1><strong>Situación Inicial</strong></h1>
+<p style="text-align: center;"><strong><iframe width="640" height="480" src="//www.youtube.com/embed/1DE8BC0zgu4" allowfullscreen="allowfullscreen"></iframe><br /></strong></p>
+<p></p>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper FreeTextIdevice" id="id55">
+<div class="iDevice emphasis0">
+<div id="ta55_85" class="block iDevice_content">
+<p>Se llaman combinaciones de n objetos de orden k a los distintos grupos que se pueden formar al escoger secuencialmente k objetos de entre n posibles, de modo cada una de las combinaciones es distinta de las demás, si difiere en uno de sus objetos por lo menos, sin importar el orden. Notación: C<sub>n,k</sub></p>
+<p><br />Para calcular el número de combinaciones de k objetos que se pueden formar con los n objetos disponibles, se considera que, por cada combinación de k objetos, existen k! ordenaciones equivalentes de k objetos; en efecto, cada combinación de k objetos se puede permutar de k! maneras diferentes, generando k! variaciones. De modo que basta con dividir el número de variaciones de n objetos de orden k, entre las permutaciones de k objetos para obtener las combinaciones de n objetos de orden k, es decir:</p>
+<p><img src="img/formula_combinaciones.png" alt="formula combinanciones" style="display: block; margin-left: auto; margin-right: auto;" width="202" height="78" /><strong>Ejemplo 1</strong></p>
+<p>un grupo de 12 trabajadoresnecesitan formar una comisión de 3 personas para hablar con su jefe,  ¿Cuántos grupos diferentes  de personas se pueden seleccionar para dicha tarea?</p>
+<p>Debemos elegir grupos de 3 de entre los 12, no influye el orden por lo que estamos frente a una combinación.</p>
+<p><img src="img/respuestaejemplo1combi.png" alt="ejemplo 1 combinanciones" style="display: block; margin-left: auto; margin-right: auto;" width="269" height="56" /></p>
+<p>Por lo que podemos formar 220 grupos distintos para hablar con el jefe.</p>
+<p></p>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper CasestudyIdevice em_iDevice" id="id56">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">BARAJA INGLESA</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta56_94" class="block iDevice_content">
+<p>¿Cuántas manos diferentes le pueden tocar a un jugador de poker?</p>
+</section>
+<section id="taquesQuestion0b56" class="block iDevice_content">
+<p><img src="img/pokerfull.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto;" width="300" height="168" /></p>
+</section>
+<form name="feedback-form-quesFeedback0b56" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback0b56text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback0b56" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<section id="feedback-quesFeedback0b56" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p>Una mano de poker es de 5 cartas y la baraja inglesa consta de 52; por ende, en cada mano se obtiene, de una en una, la muestra de 5 cartas distintas; para efectos de conteo, a esta manera de tomar la muestra se le denomina muestreo sin reemplazo. La primera carta puede ser cualquiera de la 52, la segunda puede ser cualquiera de las 51 restantes,..., y la quinta, que puede ser cualquiera de las 48 que quedan.<br />El orden en el que salen las carta no importa y evidentemente no se permite la repetición; por lo tanto, son combinaciones de 52 objetos tomados de 5 en 5, es decir tenemos:</p>
+<p><img src="img/Casopracticopoker.png" alt="poker" width="313" height="52" /></p>
+<p>LO que nos da que tenemos 2.598.960 posibles manos para jugar al poker.</p></section>
+</form>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper CasestudyIdevice em_iDevice" id="id58">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Carrera</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta58_94" class="block iDevice_content">
+<p>En una prueba de atletismo en la que participan 8 atletas se pueden clasificar sólo 3 para la final. ¿Cuantos grupos distintos de finalistas se pueden formar?</p>
+</section>
+<section id="taquesQuestion0b58" class="block iDevice_content">
+<p><img src="img/carrera.jpg" alt="carrera" style="display: block; margin-left: auto; margin-right: auto;" width="383" height="195" /></p>
+</section>
+<form name="feedback-form-quesFeedback0b58" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback0b58text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback0b58" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<section id="feedback-quesFeedback0b58" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p>El orden no importa. Luego son combinaciones. Los elementos no se pueden repetir. Entonces tenemos combinaciones sin repetición, de 8<br />elementos tomados de tres en tres, por lo que tenemos:</p>
+<p><img src="problema2combi.png" alt="combinaciones 2" style="display: block; margin-left: auto; margin-right: auto;" width="285" height="82" />Lo que nos indica que se pueden elegir 56 grupos distintos de 3 atletas para clasificar a la final.</p>
+<p></p></section>
+</form>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+</div>                  
+</section>
+                    
         <!-- Call to Action -->
         <section class="content-section bg-primary text-white">
             <div class="container text-center">
