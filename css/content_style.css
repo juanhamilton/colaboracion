@@ -17,6 +17,8 @@ and open the template in the editor.
 }
 
 .espaciado{
-    line-height : 10px;    
+    line-height : 12px;    
 }
-
+.espaciadofot{
+    line-height : 30px;    
+}
