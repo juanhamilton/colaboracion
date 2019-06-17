@@ -15,7 +15,7 @@ body {
 }
 
 .btn-xl {
-  padding: 0.5rem 1.5rem;
+  padding: 0.3rem 1.5rem;
 }
 
 .content-section {
@@ -376,7 +376,7 @@ a:hover, a:focus, a:active {
 }
 
 .btn-dark {
-  color: #fff !important;
+  color: #326cc3 !important;
 }
 
 .btn {
