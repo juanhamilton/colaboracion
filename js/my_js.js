@@ -3,11 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+// A $( document ).ready() block.
+$( document ).ready(function() {
+    $(".js-hidden").hide();
+});
 
 $(".feedback-toggler").click(function() {
   $id = $(this).attr("id");
   $idClass = "#sec-" + $id;
-  $($idClass).addClass("d-none");
+  $($idClass).addClass(".d-inline");
   
 })
 
