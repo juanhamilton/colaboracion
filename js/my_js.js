@@ -5,13 +5,13 @@
  */
 // A $( document ).ready() block.
 $( document ).ready(function() {
-    $(".js-hidden").hide();
+    $(".js-hidden").addClass("d-none");
 });
 
 $(".feedback-toggler").click(function() {
   $id = $(this).attr("id");
   $idClass = "#sec-" + $id;
-  $($idClass).addClass(".d-inline");
+  $($idClass).addClass("d-inline");
   
 })
 
