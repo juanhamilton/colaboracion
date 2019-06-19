@@ -5,6 +5,10 @@
  */
 
 $(".feedback-toggler").click(function() {
-  alert($(this).attr("name")) ;
+  $id = $(this).attr("id");
+  $idClass = "sec-" + $id;
+  alert($id) ;
+  alert($idClass) ;
+  
 })
 
