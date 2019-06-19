@@ -6,9 +6,8 @@
 
 $(".feedback-toggler").click(function() {
   $id = $(this).attr("id");
-  $idClass = "sec-" + $id;
-  alert($id) ;
-  alert($idClass) ;
+  $idClass = "#sec-" + $id;
+  $($idClass).addClass("d-none");
   
 })
 
