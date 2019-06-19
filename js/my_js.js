@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-$("#boton1").click(function() {
-  alert( "Handler for .click() called." );
+$(".feedback-toggler").click(function() {
+  alert($(this).attr("name")) ;
 })
 
