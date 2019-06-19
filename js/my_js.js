@@ -16,7 +16,7 @@ $(".feedback-toggler").click(function() {
     }else{
         alert('No');
     }
-
+  $($idClass).removeClass("d-none");
   $($idClass).addClass("d-inline");
   
 })
