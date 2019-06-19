@@ -9,6 +9,7 @@ $( document ).ready(function() {
 });
 
 $(".feedback-toggler").click(function() {
+    alert("se apreto");
   $id = $(this).attr("id");
   $idClass = "#sec-" + $id;
   $($idClass).addClass("d-inline");
